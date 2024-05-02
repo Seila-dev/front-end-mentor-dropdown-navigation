@@ -1,0 +1,223 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.header .header-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.header .header-navigation .logo{
+    margin: 10px 50px 0 20px;
+    user-select: none;
+}
+
+.header .header-navigation .logo img{
+    width: 100px;
+}
+
+.header .header-navigation .menu ul{
+    display: flex;
+}
+
+.header .header-navigation .menu ul li:not(.features-section-item){
+    margin-inline: 30px;
+}
+
+.header .header-navigation .menu ul li .menu-item{
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .header-navigation .menu ul li .menu-item::after,
+.menu-item::after{
+    content: "";
+    background: url('../images/icon-arrow-down.svg') center center no-repeat;
+    width: 30px;
+    height: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header a:hover{
+    color: black;
+}
+
+.header .header-login a{
+    margin-right: 30px;
+    padding: 15px 25px;
+}
+
+.header .header-login .registerBtn{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-container .grid-item-1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 120px 0px 20px 100px;
+    margin-left: 50px;
+    font-size: 20px;
+    gap: 40px;
+}
+
+.grid-container .grid-item-1 .title{
+    font-size: 300%;
+    color: black;
+}
+
+.grid-container .grid-item-1 .text{
+    width: 75%;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.grid-container .grid-item-1 #learnMoreBtn{
+    padding: 20px;
+    width: 200px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25s ease-in-out;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-container .grid-item-1 #learnMoreBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.grid-container .grid-item-1 .sponsorships{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.grid-container .grid-item-1 .sponsorships img{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.grid-container .grid-item-2{
+    height: calc(100vh - 106.14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+}
+
+.grid-container .grid-item-2 picture img{
+    width: 100%;
+}
+
+.menu-burguer{
+    display: none;
+}
+
+.menu-burguer span{
+    font-size: 30px;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu .menu-events{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 200px;
+    top: 40px;
+    left: -40px;
+    width: 180px;
+    flex-direction: column;
+    border-radius: 10px;
+    display: none;
+}
+
+.menu-events.burguer,
+.menu-events{
+    display: none;
+}
+
+.menu-events.burguer.aberto,
+.menu-events.aberto{
+    display: flex;
+    user-select: none;
+}
+
+.menu .company-section{
+    top: 40px;
+    left: 190px;
+    width: 150px;
+    height: 150px;
+}
+
+.menu .menu-events ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 10px;
+}
+
+.menu .company-section ul{
+    padding: 0;
+    justify-content: center;
+}
+
+.menu .company-section .company-section-item{
+    padding: 10px 0;
+}
+
+.company-section.burguer{
+    margin-left: 30px;
+}
+
+.features-section-item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px 15px 5px 2px;
+}
+
+.menu-events a{
+    width: 100%;
+}
+
+.features-section-item::before{
+    content: "";
+    display: flex;
+    width: 70px;
+    height: 16px;
+}
+
+.todo-list-item::before{
+    background: url('../images/icon-todo.svg') center center no-repeat;
+}
+
+.calendar-item::before{
+    background: url('../images/icon-calendar.svg') center center no-repeat;
+}
+
+.reminders-item::before{
+    background: url('../images/icon-reminders.svg') center center no-repeat;
+}
+
+.planning-item::before{
+    background: url('../images/icon-planning.svg') center center no-repeat;
+}

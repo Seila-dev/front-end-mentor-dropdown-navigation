@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./css/reset.css"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/burguer.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-navigation">
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="Logo do site">
+      </a>
+      <nav class="menu">
+        <ul>
+          <li><a class="menu-item features">Features</a></li>
+          <div class="menu-events features-section">
+            <ul>
+              <li class="features-section-item todo-list-item"><a href="#">Todo list</a></li>
+              <li class="features-section-item calendar-item"><a href="#">Calender</a></li>
+              <li class="features-section-item reminders-item"><a href="#">Reminders</a></li>
+              <li class="features-section-item planning-item"><a href="#">Planning</a></li>
+            </ul>
+          </div>
+          <li><a class="menu-item company">Company</a></li>
+          <div class="menu-events company-section">
+            <ul>
+              <li class="company-section-item"><a href="#">History
+              <li class="company-section-item"><a href="#">Our team</a></li>
+              <li class="company-section-item"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="header-login">
+      <a href="#">Login</a>
+      <a href="#" class="registerBtn">Register</a>
+    </div>
+      </nav>
+
+    <div class="menu-burguer">
+      <span class="material-symbols-outlined menu-burguer-btn" id="menuBurguerBtn">menu</span>
+      <div class="openBurguerSection">
+        <span class="material-symbols-outlined menu-burguer-btn" id="closeMenuBtn">close</span>
+        <ul>
+          <li><a class="menu-item features">Features</a></li>
+          <div class="menu-events features-section burguer">
+            <ul>
+              <li class="features-section-item todo-list-item"><a href="#">Todo list</a></li>
+              <li class="features-section-item calendar-item"><a href="#">Calender</a></li>
+              <li class="features-section-item reminders-item"><a href="#">Reminders</a></li>
+              <li class="features-section-item planning-item"><a href="#">Planning</a></li>
+            </ul>
+          </div>
+          <li><a class="menu-item company">Company</a></li>
+          <div class="menu-events company-section burguer">
+            <ul>
+              <li class="company-section-item"><a href="#">History
+              <li class="company-section-item"><a href="#">Our team</a></li>
+              <li class="company-section-item"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="header-login">
+          <a href="#">Login</a>
+          <a href="#" class="registerBtn">Register</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <main class="grid-container">
+    <div class="grid-item-1">
+      <h1 class="title">Make <span>remote work</span></h1>
+      <p class="text">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a href="#" id="learnMoreBtn">Learn more</a>
+
+      <div class="sponsorships">
+        <img src="./images/client-databiz.svg" alt="DataBiz">
+        <img src="./images/client-audiophile.svg" alt="audiophile">
+        <img src="./images/client-meet.svg" alt="meet">
+        <img src="./images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+    <div class="grid-item-2">
+      <picture>
+        <source media="(min-width:802px)" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-mobile.png" alt="Homem sentado usando o computador">
+</picture>
+    </div>
+  </main>
+  
+  <script src="index.js"></script>
+</body>
+</html>
